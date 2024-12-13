@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salon Booking App Project Roadmap</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.8;
+            background-color: #121212; /* Rich Black */
+            color: #E0E0E0; /* Light Gray */
+        }
+        h1, h2 {
+            color: #E0E0E0; /* Light Gray */
+            border-bottom: 3px solid #4C4C6D; /* Slate Blue */
+            padding-bottom: 8px;
+        }
+        .section {
+            background-color: #1C1C1E; /* Dark Charcoal */
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            margin-bottom: 20px;
+            transition: transform 0.2s;
+        }
+        .section:hover {
+            transform: translateY(-5px);
+        }
+        .checklist {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .checklist li {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 12px;
+            padding: 10px;
+            background-color: #1C1C1E; /* Dark Charcoal */
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+        }
+        .checklist input {
+            accent-color: #F4D35E; /* Goldenrod */
+        }
+        .progress-bar {
+            width: 100%;
+            background-color: #4C4C6D; /* Slate Blue */
+            border-radius: 15px;
+            padding: 5px;
+            margin-top: 10px;
+        }
+        .progress {
+            background: linear-gradient(to right, #F4D35E, #4C4C6D); /* Goldenrod to Slate Blue */
+            height: 20px;
+            border-radius: 10px;
+            transition: width 0.4s ease;
+        }
+
+        .palette {
+            display: flex;
+            gap: 10px;
+            margin-top: 20px;
+        }
+        .palette .color-box {
+            width: 50px;
+            height: 50px;
+            border-radius: 5px;
+            border: 1px solid #E0E0E0;
+        }
+    </style>
+    
+    
+</head>
+<body>
+    <h1>📱 Salon Booking App Project Roadmap</h1>
+
+    <div class="section">
+        <h2>🎨 Color Palette (Nocturnal Bliss)</h2>
+        <div class="palette">
+            <div class="color-box" style="background-color: #1C1C1E;" title="Primary: Dark Charcoal"></div>
+            <div class="color-box" style="background-color: #4C4C6D;" title="Secondary: Slate Blue"></div>
+            <div class="color-box" style="background-color: #F4D35E;" title="Accent: Goldenrod"></div>
+            <div class="color-box" style="background-color: #121212;" title="Background: Rich Black"></div>
+            <div class="color-box" style="background-color: #E0E0E0;" title="Text: Light Gray"></div>
+        </div>
+    </div>
+
+    
+
+    <div class="section">
+        <h2>🚀 Project Preparation</h2>
+        <div class="progress-bar">
+            <div class="progress" style="width: 30%"></div>
+        </div>
+        <ul class="checklist" id="project-setup">
+            <li>
+                <input type="checkbox" id="create-project">
+                <label for="create-project">Initialize New Flutter Project</label>
+            </li>
+            <li>
+                <input type="checkbox" id="setup-firebase">
+                <label for="setup-firebase">Configure Firebase Project</label>
+            </li>
+            <li>
+                <input type="checkbox" id="configure-dependencies">
+                <label for="configure-dependencies">Set Up Core Dependencies</label>
+            </li>
+            <li>
+                <input type="checkbox" id="setup-folder-structure">
+                <label for="setup-folder-structure">Organize Project Folder Structure</label>
+            </li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>🔐 Authentication Module</h2>
+        <div class="progress-bar">
+            <div class="progress" style="width: 20%"></div>
+        </div>
+        <ul class="checklist" id="auth-module">
+            <li>
+                <input type="checkbox" id="login-screen">
+                <label for="login-screen">Design Login Screen</label>
+            </li>
+            <li>
+                <input type="checkbox" id="register-screen">
+                <label for="register-screen">Create Registration Screen</label>
+            </li>
+            <li>
+                <input type="checkbox" id="google-login">
+                <label for="google-login">Implement Google Login</label>
+            </li>
+            <li>
+                <input type="checkbox" id="password-reset">
+                <label for="password-reset">Add Password Reset Feature</label>
+            </li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>💇‍♀️ Salon Module</h2>
+        <div class="progress-bar">
+            <div class="progress" style="width: 10%"></div>
+        </div>
+        <ul class="checklist" id="salon-module">
+            <li>
+                <input type="checkbox" id="salon-list">
+                <label for="salon-list">Display List of Salons</label>
+            </li>
+            <li>
+                <input type="checkbox" id="salon-detail">
+                <label for="salon-detail">Create Salon Detail Page</label>
+            </li>
+            <li>
+                <input type="checkbox" id="service-list">
+                <label for="service-list">List Salon Services</label>
+            </li>
+            <li>
+                <input type="checkbox" id="stylist-profile">
+                <label for="stylist-profile">Show Stylist Profiles</label>
+            </li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>📅 Booking Module</h2>
+        <div class="progress-bar">
+            <div class="progress" style="width: 15%"></div>
+        </div>
+        <ul class="checklist" id="booking-module">
+            <li>
+                <input type="checkbox" id="booking-calendar">
+                <label for="booking-calendar">Interactive Booking Calendar</label>
+            </li>
+            <li>
+                <input type="checkbox" id="time-slot">
+                <label for="time-slot">Time Slot Selection</label>
+            </li>
+            <li>
+                <input type="checkbox" id="booking-confirmation">
+                <label for="booking-confirmation">Booking Confirmation</label>
+            </li>
+            <li>
+                <input type="checkbox" id="booking-history">
+                <label for="booking-history">Booking History</label>
+            </li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>💳 Payment Module</h2>
+        <div class="progress-bar">
+            <div class="progress" style="width: 10%"></div>
+        </div>
+        <ul class="checklist" id="payment-module">
+            <li>
+                <input type="checkbox" id="payment-gateway">
+                <label for="payment-gateway">Integrate Payment Gateway</label>
+            </li>
+            <li>
+                <input type="checkbox" id="payment-method">
+                <label for="payment-method">Provide Payment Methods</label>
+            </li>
+            <li>
+                <input type="checkbox" id="payment-history">
+                <label for="payment-history">Show Transaction History</label>
+            </li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>🧪 Testing & Deployment</h2>
+        <div class="progress-bar">
+            <div class="progress" style="width: 5%"></div>
+        </div>
+        <ul class="checklist" id="testing-module">
+            <li>
+                <input type="checkbox" id="unit-test">
+                <label for="unit-test">Unit Testing</label>
+            </li>
+            <li>
+                <input type="checkbox" id="integration-test">
+                <label for="integration-test">Integration Testing</label>
+            </li>
+            <li>
+                <input type="checkbox" id="play-store">
+                <label for="play-store">Publish to Play Store</label>
+            </li>
+            <li>
+                <input type="checkbox" id="app-store">
+                <label for="app-store">Publish to App Store</label>
+            </li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>📋 App Name Suggestions</h2>
+        <ul class="list">
+            <li>SalonSync</li>
+            <li>GlamReserve</li>
+            <li>Stylely</li>
+            <li>BeautyBooking</li>
+            <li>LuxeSalon</li>
+            <li>ChicChoice</li>
+            <li>GlamorousGo</li>
+            <li>StyleNest</li>
+            <li>PamperPoint</li>
+            <li>GlossyHub</li>
+        </ul>
+    </div>
+
+    <script>
+        // Optional: Update progress dynamically when checkboxes are clicked
+        document.querySelectorAll('input[type="checkbox"]').forEach(checkbox => {
+            checkbox.addEventListener('change', function() {
+                const section = this.closest('.section');
+                const progressBar = section.querySelector('.progress');
+                const totalCheckboxes = section.querySelectorAll('input[type="checkbox"]').length;
+                const checkedCheckboxes = section.querySelectorAll('input[type="checkbox"]:checked').length;
+                const progressPercentage = (checkedCheckboxes / totalCheckboxes) * 100;
+                progressBar.style.width = `${progressPercentage}%`;
+            });
+        });
+    </script>
+</body>
+</html>
+
+
